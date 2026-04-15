@@ -1,0 +1,95 @@
+/* Genel ayarlar */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #0f172a;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Başlık */
+h1 {
+  font-size: 42px;
+  margin-top: 40px;
+}
+
+p {
+  opacity: 0.7;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Buton grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  max-width: 400px;
+  margin: 40px auto;
+}
+
+/* Buton tasarımı */
+.grid a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 140px;
+  background: #1e293b;
+  padding: 40px 10px;
+  text-decoration: none;
+  color: white;
+  border-radius: 18px;
+  font-size: 22px;
+  transition: 0.3s;
+}
+
+.grid a:hover {
+  background: #38bdf8;
+  transform: scale(1.05);
+}
+
+/* Alt yazı */
+.footer {
+  margin-top: 60px;
+  opacity: 0.6;
+  font-size: 14px;
+}
+
+/* 📱 MOBİL TASARIM */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 32px;
+    margin-top: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    max-width: 300px;
+    gap: 16px;
+    margin: 28px auto;
+  }
+
+  .grid a {
+    font-size: 20px;
+    padding: 30px 10px;
+    min-height: 100px;
+    border-radius: 14px;
+  }
+
+  .footer {
+    margin-top: 40px;
+    font-size: 13px;
+  }
+}
